@@ -3,84 +3,76 @@ layout: single
 permalink: /reversi/play
 ---
 <section class="main-content">
-<div style="width: 410px">
-			<div style="float: left">
-				<a href="#help"><img src="images/help.png" alt="Help" style="width: 32px"></img></a>
-			</div>
-			<div style="float: right">
-				<a href="#settings"><img src="images/settings.png" alt="Settings" style="width: 32px"></img></a>
-			</div>
-		</div>
-		<div style="width: 410px">
-			<canvas id="c" width="409" height="460"></canvas>
-		</div>
-		<div id="gameover" class="modalDialog">
-			<div>
-				<a href="#close" title="Close" class="close">X</a>
-				<form name="playAgain">
-					<h2 id="result_text"></h2>
-					<p>Do you want to play again?</p>
-					<p class="center">
-						<input type="submit" value="Yes">
-						<input type="reset" value="No">
-					</p>
-				</form>
-			</div>
-		</div>
-		<div id="help" class="modalDialog">
-			<div>
-				<a href="#close" title="Close" class="close">X</a>
-				<h2>Reversi Help</h2>
-			    <p>Reversi is played on an 8x8 board. The two players each have 32 pieces, which are white on one side and black on the other.</p> 
-				<p>The goal to earn as many pieces as possible by flipping/capturing your opponent's pieces.</p>
-				<p>Each turn, a player must place a disc of his color on one of the empty squares, adjacent to an opponent's disc. For this to be a valid move, he must flank one or more of his opponent's discs between the disc played and another disc of his color already on the board.  He then flips to his color all the discs which were flanked. Note that discs can be flanked in all eight directions.</p>
-				<h3>Rules</h3>
-				<ol>
-					<li>The black player always goes first.</li>
-					<li>Corner pieces can never be flipped once set.</li>
-					<li>If one player can't move, the other player gets to keep making moves until first player can play a move.</li>
-					<li>If neither player can move, the game ends and the current score determines winner.  There can be tie games if scores are same.</li>
-					<li>If one player runs out of squares on the board, they automatically lose.</li>
-				</ol>
-			</div>
-		</div>
-		<div id="settings" class="modalDialog">
-			<div>
-				<a href="#close" title="Close" class="close">X</a>
-				<form name="settings">
-					<fieldset>
-						<h2>Game Settings</h2>
-					    <p style="font-weight: bold">Difficulty:</p>
-						<p><input id="difficulty_easy" name="difficulty" type="radio" value="easy" checked><label for="difficulty_easy">Easy<label></p>
-						<p><input id="difficulty_normal" name="difficulty" type="radio" value="normal"><label for="difficulty_normal">Normal<label></p>
-					    <p style="font-weight: bold">Preferred Color:</p>
-						<p><input id="color_choice_random" name="color_choice" type="radio" value="random" checked><label for="color_choice_random">Random<label></p>
-						<p><input id="color_choice_black" name="color_choice" type="radio" value="black"><label for="color_choice_black">Black<label></p>
-						<p><input id="color_choice_white" name="color_choice" type="radio" value="white"><label for="color_choice_white">White<label></p>
-						<p>
-							<label><input id="show_hints" type="checkbox" name="show_hints" value="show" checked>Show Move Hints</label>
-						</p>
-						<p>
-							<input type="submit" value="Save">
-							<input type="reset" value="Cancel">
-						</p>
-					</fieldset>
-				</form>
-			</div>
-		</div>
+    <div style="width: 410px">
+        <div style="float: left">
+            <a href="#help"><img src="{{ site.baseurl }}/assets/images/help.png" alt="Help" style="width: 32px"></img></a>
+        </div>
+        <div style="float: right">
+            <a href="#settings"><img src="{{ site.baseurl }}/assets/images/images/settings.png" alt="Settings" style="width: 32px"></img></a>
+        </div>
+    </div>
+    <div style="width: 410px">
+    <canvas id="c" width="409" height="460"></canvas>
+    </div>
+    <div id="gameover" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <form name="playAgain">
+            <h2 id="result_text"></h2>
+            <p>Do you want to play again?</p>
+            <p class="center">
+                <input type="submit" value="Yes">
+                <input type="reset" value="No">
+            </p>
+        </form>
+    </div>
+    </div>
+    <div id="help" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Reversi Help</h2>
+        <p>Reversi is played on an 8x8 board. The two players each have 32 pieces, which are white on one side and black on the other.</p> 
+        <p>The goal to earn as many pieces as possible by flipping/capturing your opponent's pieces.</p>
+        <p>Each turn, a player must place a disc of his color on one of the empty squares, adjacent to an opponent's disc. For this to be a valid move, he must flank one or more of his opponent's discs between the disc played and another disc of his color already on the board.  He then flips to his color all the discs which were flanked. Note that discs can be flanked in all eight directions.</p>
+        <h3>Rules</h3>
+        <ol>
+            <li>The black player always goes first.</li>
+            <li>Corner pieces can never be flipped once set.</li>
+            <li>If one player can't move, the other player gets to keep making moves until first player can play a move.</li>
+            <li>If neither player can move, the game ends and the current score determines winner.  There can be tie games if scores are same.</li>
+            <li>If one player runs out of squares on the board, they automatically lose.</li>
+        </ol>
+    </div>
+    </div>
+    <div id="settings" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <form name="settings">
+            <fieldset>
+                <h2>Game Settings</h2>
+                <p style="font-weight: bold">Difficulty:</p>
+                <p><input id="difficulty_easy" name="difficulty" type="radio" value="easy" checked><label for="difficulty_easy">Easy<label></p>
+                <p><input id="difficulty_normal" name="difficulty" type="radio" value="normal"><label for="difficulty_normal">Normal<label></p>
+                <p style="font-weight: bold">Preferred Color:</p>
+                <p><input id="color_choice_random" name="color_choice" type="radio" value="random" checked><label for="color_choice_random">Random<label></p>
+                <p><input id="color_choice_black" name="color_choice" type="radio" value="black"><label for="color_choice_black">Black<label></p>
+                <p><input id="color_choice_white" name="color_choice" type="radio" value="white"><label for="color_choice_white">White<label></p>
+                <p>
+                    <label><input id="show_hints" type="checkbox" name="show_hints" value="show" checked>Show Move Hints</label>
+                </p>
+                <p>
+                    <input type="submit" value="Save">
+                    <input type="reset" value="Cancel">
+                </p>
+            </fieldset>
+        </form>
+    </div>
+    </div>
 
-		<script src="javascripts/sji.js"></script>
-		<script src="javascripts/settings.js"></script>
-		<script src="javascripts/game.js"></script>
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/sbuberl/reversi">Reversi</a> is maintained by <a href="https://github.com/sbuberl">sbuberl</a>.</span>
+    <script src="{{ '/assets/js/reversi/sji.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reversi/settings.js' | relative_url }}"></script>
+    <script src="{{ '/assets/js/reversi/game.js' | relative_url }}"></script>
+    <script src="javascripts/sji.js"></script>\
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
-
-    </section>
-
-  
-  </body>
-</html>
+</section>
 
