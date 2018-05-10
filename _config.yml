@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "Steve Buberl"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
+  bio              : I do stuff"
   location         : "Somewhere"
   email            :
   uri              :
@@ -111,7 +111,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "https://github.com/sbuberl"
+  github           : "sbuberl"
   gitlab           :
   google_plus      :
   keybase          :
