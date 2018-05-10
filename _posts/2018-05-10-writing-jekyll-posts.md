@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Welcome"
+date:   2018-11-17 16:50:00 -0600
+categories: general
+---
+Welcome to Steve's Stuff.  This will be a personal site about some of coding projects.
+Probably going to add some styling soon.  I will post new releases and more documentation in the future.
+
+I will also some new projects on here like my new programming language PX will have 
+releases and docs on here as well when it's ready.
+
+**NOTE** I also broke Reversi when I added to this design.
+The code detecting which row and column is getting incorrect results.  I will
+try to fix this at some point.
+
