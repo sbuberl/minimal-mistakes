@@ -2,8 +2,7 @@
 main:
   - title: "About"
     url: /about/
-    main:
-- title: "Reversi"
+  - title: "Reversi"
     url: /reversi/
   # - title: "Sample Posts"
   #   url: /year-archive/
