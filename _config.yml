@@ -100,7 +100,7 @@ analytics:
 author:
   name             : "Steve Buberl"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : I do stuff"
+  bio              : "I do stuff"
   location         : "Somewhere"
   email            :
   uri              :
