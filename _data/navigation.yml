@@ -16,6 +16,10 @@ fsql_side_bar:
     url: /tmp/fSQL
   - title: "Downloads"
     url: /tmp/fSQL/download
+  - title: "SourceForge Page"
+    url: http://sourceforge.net/projects/fsql
+  - title: "GitHub Page"
+    url: https://github.com/sbuberl/fSQL
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
