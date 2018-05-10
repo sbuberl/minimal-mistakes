@@ -13,9 +13,9 @@ main:
 
 fsql_side_bar:
   - title: "Home"
-    url: /tmp/fSQL
+    url: /fSQL
   - title: "Releases"
-    url: /tmp/fSQL/releases
+    url: /fSQL/releases
   - title: "SourceForge Page"
     url: http://sourceforge.net/projects/fsql
   - title: "GitHub Page"
@@ -23,6 +23,6 @@ fsql_side_bar:
   - title: Documentation
     children:
       - title: "Tutorial"
-        url: /tmp/fSQL/docs/tutorial
+        url: /fSQL/docs/tutorial
       - title: "Features"
-        url: /tmp/fSQL/docs/features
+        url: /fSQL/docs/features

@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /tmp/fSQL/docs/features
+permalink: /fSQL/docs/features
 title: fSQL Features
 sidebar:
     nav: "fsql_side_bar"

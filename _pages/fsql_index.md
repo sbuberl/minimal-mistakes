@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /tmp/fSQL
+permalink: /fSQL
 title: Flat-File SQL
 sidebar:
     nav: "fsql_side_bar"
