@@ -20,9 +20,9 @@ fsql_side_bar:
     url: http://sourceforge.net/projects/fsql
   - title: "GitHub Page"
     url: https://github.com/sbuberl/fSQL
-  - title: Documenation
+  - title: Documentation
     children:
       - title: "Tutorial"
         url: /tmp/fSQL/docs/tutorial
       - title: "Features"
-        url: //tmp/fSQL/docs/features
+        url: /tmp/fSQL/docs/features
