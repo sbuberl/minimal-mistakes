@@ -1,7 +1,7 @@
 ---
 layout: single
-permalink: /tmp/fSQL/downloads
-title: fSQL Downloads
+permalink: /tmp/fSQL/download
+title: fSQL Releases
 sidebar:
     nav: "fsql_side_bar"
 ---

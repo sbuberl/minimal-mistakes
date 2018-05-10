@@ -14,8 +14,8 @@ main:
 fsql_side_bar:
   - title: "Home"
     url: /tmp/fSQL
-  - title: "Downloads"
-    url: /tmp/fSQL/download
+  - title: "Releases"
+    url: /tmp/fSQL/releases
   - title: "SourceForge Page"
     url: http://sourceforge.net/projects/fsql
   - title: "GitHub Page"
