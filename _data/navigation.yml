@@ -3,7 +3,7 @@ main:
   - title: "About"
     url: /about/
   - title: "Reversi"
-    url: /reversi/
+    url: /reversi
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
