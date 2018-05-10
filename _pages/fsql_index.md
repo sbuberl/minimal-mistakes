@@ -2,8 +2,8 @@
 layout: single
 permalink: /tmp/fSQL
 ---
-# Flat-File SQL
-Welcome to the home of Flat-File SQL! Flat-File SQL (or fSQL for short) is a way to use SQL queries without having another database (like mySQL) installed. It uses regular files that you store wherever you want. At the moment, there is only a PHP version, but a perl version and possibly other language ports are planned.
+
+Welcome to the home of Flat-File SQL! Flat-File SQL (or fSQL for short) is a way to use SQL queries without having another database (like mySQL) installed. It uses regular files that you store wherever you want. At the moment, there is only a PHP version.
 
 ## Features and Benefits
 
