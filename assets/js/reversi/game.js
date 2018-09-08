@@ -467,6 +467,7 @@
 
         cellClicked : function(event) {
             if(Game.isUserTurn) {
+                var canvas = Game.canvas;
                 var x = 0;
                 var y = 0;
                 if (event.x != undefined && event.y != undefined) {
