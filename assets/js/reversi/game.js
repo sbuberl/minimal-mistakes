@@ -480,8 +480,8 @@
                     y = event.clientY + document.body.scrollTop +
                         document.documentElement.scrollTop;
                 }
-                var gridX = x - rect.left - canvas.offsetLeft;
-                var gridY = y - rect.top - canvas.offsetTop - Scoreboard.height;
+                var gridX = x - rect.left;
+                var gridY = y - rect.top - Scoreboard.height;
                 if(gridY >= 0) {
                     var row = Math.floor(gridY/51);
                     var col = Math.floor(gridX/51);
