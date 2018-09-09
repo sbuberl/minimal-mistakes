@@ -10,7 +10,7 @@ sidebar:
 <section class="main-content">
     <div style="width: 410px">
         <div style="float: right">
-            <a id="settingsBtn" href="#settings"><img src="{{ site.baseurl }}/assets/images/settings.png" alt="Settings" style="width: 32px"></img></a>
+            <a id="settingsBtn" href="/reversi/settings"><img src="{{ site.baseurl }}/assets/images/settings.png" alt="Settings" style="width: 32px" /></a>
         </div>
     </div>
     <div style="width: 410px">
@@ -29,62 +29,10 @@ sidebar:
             </form>
         </div>
     </div>
-    <div id="settings" class="modalDialog">
-        <div>
-            <a href="#close" title="Close" class="close">X</a>
-            <form name="settings">
-                <fieldset>
-                    <h2>Game Settings</h2>
-                    <p style="font-weight: bold">Difficulty:</p>
-                    <p><input id="difficulty_easy" name="difficulty" type="radio" value="easy" checked><label for="difficulty_easy">Easy<label></p>
-                    <p><input id="difficulty_normal" name="difficulty" type="radio" value="normal"><label for="difficulty_normal">Normal<label></p>
-                    <p style="font-weight: bold">Preferred Color:</p>
-                    <p><input id="color_choice_random" name="color_choice" type="radio" value="random" checked><label for="color_choice_random">Random<label></p>
-                    <p><input id="color_choice_black" name="color_choice" type="radio" value="black"><label for="color_choice_black">Black<label></p>
-                    <p><input id="color_choice_white" name="color_choice" type="radio" value="white"><label for="color_choice_white">White<label></p>
-                    <p>
-                        <label><input id="show_hints" type="checkbox" name="show_hints" value="show" checked>Show Move Hints</label>
-                    </p>
-                    <p>
-                        <input type="submit" value="Save">
-                        <input type="reset" value="Cancel">
-                    </p>
-                </fieldset>
-            </form>
-        </div>
-    </div>
 
     <script src="{{ '/assets/js/reversi/sji.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/reversi/settings.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/reversi/game.js' | relative_url }}"></script>
-
-    <script>
-        // Get the modal
-        var modal = document.getElementById('settings');
-        
-        // Get the button that opens the modal
-        var btn = document.getElementById("settingsBtn");
-        
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
-        }
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-        </script>
 
 </section>
 
