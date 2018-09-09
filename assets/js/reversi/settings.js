@@ -34,9 +34,12 @@ var loadSettings = function() {
             showHints = Settings.current.showHints;
         }
         
-        document.forms.settings.difficulty.value = difficulty;
-        document.forms.settings.color_choice.value = color;
-        document.getElementById('show_hints').checked = showHints;
+        var form = document.getElementById('settings');
+        if( form != null) {
+            form.difficulty.value = difficulty;
+            form.color_choice.value = color;
+            document.getElementById('show_hints').checked = showHints;
+        }
         
         Settings.current = new Settings(difficulty, color, showHints);
     }
