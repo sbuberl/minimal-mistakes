@@ -18,7 +18,7 @@ starting point.</p>
 * BACKUP TABLE
 * BEGIN
 * COMMIT
-* CREATE TABLE
+* [CREATE TABLE](/fSQL/docs/create_table)
 * DELETE
 * DROP DATABASE
 * DROP TABLE

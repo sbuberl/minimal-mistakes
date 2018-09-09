@@ -21,7 +21,7 @@ starting point.</p>
 * COMMIT
 * CREATE SEQUENCE
 * CREATE SCHEMA
-* CREATE TABLE
+* [CREATE TABLE](/fSQL/docs/create_table)
 * DELETE
 * DROP DATABASE
 * DROP SEQUENCE
