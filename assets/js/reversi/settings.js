@@ -67,5 +67,8 @@ var resetSettings = function(e) {
 };
 
 loadSettings();
-document.forms.settings.addEventListener("submit", saveSettings, false);
-document.forms.settings.addEventListener("reset", resetSettings, false);
+var form = document.getElementById('settings');
+if( form != null) {
+    form.addEventListener("submit", saveSettings, false);
+    form.addEventListener("reset", resetSettings, false);
+}
