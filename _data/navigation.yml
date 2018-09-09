@@ -26,3 +26,11 @@ fsql_side_bar:
         url: /fSQL/docs/tutorial
       - title: "Features"
         url: /fSQL/docs/features
+
+reversi_side_bar:
+- title: "Home"
+  url: /reversi
+- title: "Play Reversi"
+  url: /reversi/play
+- title: "GitHub Page"
+  url: https://github.com/sbuberl/reversi
