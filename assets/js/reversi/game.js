@@ -483,9 +483,9 @@
                 var gridX = x - rect.left - canvas.offsetLeft;
                 var gridY = y - rect.top - canvas.offsetTop - Scoreboard.height;
                 if(gridY >= 0) {
-                    var row = Math.floor(gridY/51) + 1;
+                    var row = 7 - Math.floor(gridY/51) + 1;
                     var col = Math.floor(gridX/51) + 1;
-                    var cell = Grid.cells[row][col];    
+                    var cell = Grid.cells[row][col];
                     if (cell.piece == Piece.none) {
                         var user = Game.user;
                         var move = user.getValidMove(cell);
