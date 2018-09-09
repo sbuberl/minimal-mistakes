@@ -4,4 +4,4 @@ permalink: /posts/reversi_woring
 title: Reversi Working Again
 ---
 
-The local copy of Reversi is playable again.   Still need to fix the Settings to launch, but other than tha, it is working. 
+The copy of Reversi running on this site is playable again.   I still need to fix the Settings to launch, but other than that, it is working. 
