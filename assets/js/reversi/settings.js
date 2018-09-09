@@ -34,7 +34,7 @@ var loadSettings = function() {
             showHints = Settings.current.showHints;
         }
         
-        var form = document.getElementById('settings');
+        var form = document.getElementByName('settings');
         if( form != null) {
             form.difficulty.value = difficulty;
             form.color_choice.value = color;
@@ -67,7 +67,7 @@ var resetSettings = function(e) {
 };
 
 loadSettings();
-var form = document.getElementById('settings');
+var form = document.getElementByName('settings');
 if( form != null) {
     form.addEventListener("submit", saveSettings, false);
     form.addEventListener("reset", resetSettings, false);
