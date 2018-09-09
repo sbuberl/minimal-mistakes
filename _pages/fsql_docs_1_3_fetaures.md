@@ -1,12 +1,12 @@
 ---
 layout: single
-permalink: /fSQL/docs/features
+permalink: /fSQL/docs/1.3/features
 title: fSQL Features
 sidebar:
     nav: "fsql_side_bar"
 ---
 
-This tutorial will provide a brief list of supported fSQL queries and functions.
+<p>This tutorial will provide a brief list of supported fSQL queries and functions.
 fSQL was originally designed based on mySQL so most of its syntax, features,
 and functions were designed after mySQL's.  In the future, fSQL will have a complete
 set of docs detailing in the supported features but for now, this will be a good
