@@ -21,7 +21,7 @@ require_once("Environment.php");
 ```
 
 Once the file is included, there is only one class you need for all of your SQL needs:
-fSQLEnvironment.  This contains information on the different databases in the program
+Environment.  This contains information on the different databases in the program
 and their location on the file system.  fSQLEnvironment is a simple API that is very similar to the PHP mysql
 API in almost every way.  For example, fSQLEnvironment's fetch_assoc() is modeled directly
 after mysql_fetch_assoc() so if you're having trouble understanding fSQL's documentation,
@@ -68,12 +68,45 @@ $fsql->select_db("db2");
 This function is the equivalent to MySQL's "USE `db2`" query.  You should always
 select a default database before using any other functions in fSQLEnvironment.
 
-## III. Data Definition and Manipulation
+
+## III. Defining Schemas
+
+Schemas have been addded to fSQL.  Schemas are basically are basically sub-directories
+in the database directory. For backwards compatibility and to follow Postgres's method,
+all databases always have a schema called "public".  This public schema's files are
+in directly inside the database directory for backwards compatibility with v1.3 which had
+no schemas.
+
+To define one, call the following:
+
+```php
+$fsql->query("CREATE SCHEMA schema3");
+```
+
+To select which schema is to be the default when using queries and other function
+calls, use the select_db() function.
+
+```php
+$fsql->select_schema("db2", "schema3");
+```
+
+## III. Using Databases and Schemas In Queries
+
+When a query references from table name or sequence, you can fully specify the full
+hierarchy to the object.  Such as table named "students" in the schema "schema3" in
+the "db2" database can referenced as db2.schema3.students.
+
+If the current schema is set to db2.schema3, you can just specify the students.
+
+If the current database is db2, but schema is not schema3, you can use schema3.students
+
+
+## IV. Data Definition and Manipulation
 
 rom here on out, the most important method for dealing with the databases'
 data is the query() method.  The query method takes one parameter and that is the string
 fSQL query to execute.  The simplest form is data definition and manipulation
-performs just the query and returns either a true value on sucess or a false
+performs just the query and returns either a true value on success or a false
 value on failure.</p>
 
 ```php
@@ -94,7 +127,7 @@ $fsql->query("DELETE FROM example WHERE id &lt; 5");
 echo "Deleted Rows: ".$fsql->affected_rows();
 ```
 
-## IV. Data Selection
+## V. Data Selection
 
 Executing data retrieval queries like SELECT are also performed using the query() method.
 Except on data retrieval queries, the query method returns a handle to a result set

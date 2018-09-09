@@ -68,7 +68,15 @@ $fsql->select_db("db2");
 This function is the equivalent to MySQL's "USE `db2`" query.  You should always
 select a default database before using any other functions in fSQLEnvironment.
 
-## III. Data Definition and Manipulation
+## III. Using Databases and In Queries
+
+When a query references from table name, you can fully specify the full
+hierarchy to the object.  Such as table named "students" in the "db2" database
+can referenced as db2.students.
+
+If the current database is set to db2, you can just specify the students.
+
+## IV. Data Definition and Manipulation
 
 rom here on out, the most important method for dealing with the databases'
 data is the query() method.  The query method takes one parameter and that is the string
@@ -94,7 +102,7 @@ $fsql->query("DELETE FROM example WHERE id &lt; 5");
 echo "Deleted Rows: ".$fsql->affected_rows();
 ```
 
-## IV. Data Selection
+## V. Data Selection
 
 Executing data retrieval queries like SELECT are also performed using the query() method.
 Except on data retrieval queries, the query method returns a handle to a result set
