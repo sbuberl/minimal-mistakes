@@ -1,4 +1,4 @@
-H---
+---
 layout: single
 permalink: /fSQL/docs/create_table
 title: CREATE TABLE
