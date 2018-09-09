@@ -1,6 +1,6 @@
 ---
 layout: single
-permalink: /fSQL/docs/1.3/tutorial
+permalink: /fSQL/docs/master/tutorial
 title: fSQL Tutorial
 sidebar:
     nav: "fsql_side_bar"
