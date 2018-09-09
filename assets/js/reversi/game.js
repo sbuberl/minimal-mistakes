@@ -470,6 +470,7 @@
                 var canvas = Game.canvas;
                 var x = 0;
                 var y = 0;
+                var rect = canvas.getBoundingClientRect();
                 if (event.x != undefined && event.y != undefined) {
                     x = event.x;
                     y = event.y;
@@ -479,8 +480,8 @@
                     y = event.clientY + document.body.scrollTop +
                         document.documentElement.scrollTop;
                 }
-                var gridX = x - canvas.offsetLeft;
-                var gridY = y - canvas.offsetTop - Scoreboard.height;
+                var gridX = x - rect.left - canvas.offsetLeft;
+                var gridY = y - rect.top - canvas.offsetTop - Scoreboard.height;
                 if(gridY >= 0) {
                     var row = Math.floor(gridY/51);
                     var col = Math.floor(gridX/51);
