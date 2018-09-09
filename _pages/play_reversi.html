@@ -14,44 +14,44 @@ sidebar:
         </div>
     </div>
     <div style="width: 410px">
-    <canvas id="c" width="409" height="460"></canvas>
+        <canvas id="c" width="409" height="460"></canvas>
     </div>
-    <div id="gameover" class="modal">
-    <div>
-        <a href="#close" title="Close" class="close">X</a>
-        <form name="playAgain">
-            <h2 id="result_text"></h2>
-            <p>Do you want to play again?</p>
-            <p class="center">
-                <input class=".btn" type="submit" value="Yes">
-                <input class=".btn .btn--primary" type="reset" value="No">
-            </p>
-        </form>
-    </div>
-    </div>
-    <div id="settings" class="modal">
-    <div class="modal_content">
-        <a href="#close" title="Close" class="close">X</a>
-        <form name="settings">
-            <fieldset>
-                <h2>Game Settings</h2>
-                <p style="font-weight: bold">Difficulty:</p>
-                <p><input id="difficulty_easy" name="difficulty" type="radio" value="easy" checked><label for="difficulty_easy">Easy<label></p>
-                <p><input id="difficulty_normal" name="difficulty" type="radio" value="normal"><label for="difficulty_normal">Normal<label></p>
-                <p style="font-weight: bold">Preferred Color:</p>
-                <p><input id="color_choice_random" name="color_choice" type="radio" value="random" checked><label for="color_choice_random">Random<label></p>
-                <p><input id="color_choice_black" name="color_choice" type="radio" value="black"><label for="color_choice_black">Black<label></p>
-                <p><input id="color_choice_white" name="color_choice" type="radio" value="white"><label for="color_choice_white">White<label></p>
-                <p>
-                    <label><input id="show_hints" type="checkbox" name="show_hints" value="show" checked>Show Move Hints</label>
+    <div id="gameover" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form name="playAgain">
+                <h2 id="result_text"></h2>
+                <p>Do you want to play again?</p>
+                <p class="center">
+                    <input class=".btn" type="submit" value="Yes">
+                    <input class=".btn .btn--primary" type="reset" value="No">
                 </p>
-                <p>
-                    <input type="submit" value="Save">
-                    <input type="reset" value="Cancel">
-                </p>
-            </fieldset>
-        </form>
+            </form>
+        </div>
     </div>
+    <div id="settings" class="modalDialog">
+        <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <form name="settings">
+                <fieldset>
+                    <h2>Game Settings</h2>
+                    <p style="font-weight: bold">Difficulty:</p>
+                    <p><input id="difficulty_easy" name="difficulty" type="radio" value="easy" checked><label for="difficulty_easy">Easy<label></p>
+                    <p><input id="difficulty_normal" name="difficulty" type="radio" value="normal"><label for="difficulty_normal">Normal<label></p>
+                    <p style="font-weight: bold">Preferred Color:</p>
+                    <p><input id="color_choice_random" name="color_choice" type="radio" value="random" checked><label for="color_choice_random">Random<label></p>
+                    <p><input id="color_choice_black" name="color_choice" type="radio" value="black"><label for="color_choice_black">Black<label></p>
+                    <p><input id="color_choice_white" name="color_choice" type="radio" value="white"><label for="color_choice_white">White<label></p>
+                    <p>
+                        <label><input id="show_hints" type="checkbox" name="show_hints" value="show" checked>Show Move Hints</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="Save">
+                        <input type="reset" value="Cancel">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
     <script src="{{ '/assets/js/reversi/sji.js' | relative_url }}"></script>
