@@ -52,18 +52,22 @@ to create it and set the appropriate permissions.
 As of PHP fSQL v1.2, fSQL allows you have multiple databases defined for
 fSQL.  For example, one could define several databases like so:
 
+
 ```php
 $fsql->define_db("db1", "/path/to/db1");
 $fsql->define_db("db2", "/path/to/db2");
 $fsql->define_db("db3", "/path/to/db3");
 ```
 
+
 To select which database is to be the default when using queries and other function
 calls, use the select_db() function.
+
 
 ```php
 $fsql->select_db("db2");
 ```
+
 
 This function is the equivalent to MySQL's "USE `db2`" query.  You should always
 select a default database before using any other functions in fSQLEnvironment.
