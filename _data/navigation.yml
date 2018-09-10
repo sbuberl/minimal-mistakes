@@ -12,28 +12,17 @@ main:
   #   url: /sitemap/
 
 fsql_side_bar:
-  - title: "Main"
-    children:
-    - title: "Home"
-      url: /fSQL
-    - title: "Releases"
-      url: /fSQL/releases
-    - title: "SourceForge"
-      url: http://sourceforge.net/projects/fsql
-    - title: "GitHub"
-      url: https://github.com/sbuberl/fSQL
-  - title: "Docs for v1.3.x"
-    children:
-      - title: "Tutorial"
-        url: /fSQL/docs/1.3/tutorial
-      - title: "Features"
-        url: /fSQL/docs/1.3/features
-  - title: "Docs for Master Branch"
-    children:
-      - title: "Tutorial"
-        url: /fSQL/docs/master/tutorial
-      - title: "Features"
-        url: /fSQL/docs/master/features
+
+  - title: "Home"
+    url: /fSQL
+  - title: "Releases"
+    url: /fSQL/releases
+  - title: "SourceForge"
+    url: http://sourceforge.net/projects/fsql
+  - title: "GitHub"
+    url: https://github.com/sbuberl/fSQL
+  - title: "Documentation"
+    url: https://github.com/sbuberl/fSQL/wiki
 
 reversi_side_bar:
 - title: "Home"
