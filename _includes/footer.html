@@ -1,3 +1,11 @@
+<script type="Javascript">
+        $(document).ready(function() {
+            $('pre code').each(function(i, block) {
+              hljs.highlightBlock(block);
+            });
+          });
+</script>
+
 <div class="page__footer-follow">
   <ul class="social-icons">
     {% if site.data.ui-text[site.locale].follow_label %}
