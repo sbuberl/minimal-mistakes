@@ -24,3 +24,11 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+<script type="Javascript">
+    $(document).ready(function() {
+        $('pre code').each(function(i, block) {
+            hljs.highlightBlock(block);
+        });
+        });
+</script>
